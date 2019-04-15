@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,70 +8,84 @@
     <title>Hero Section Hover Effects</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container" >
-        <div class="colum active">
-            <div class="content">
-                <h1>1</h1>
+    <nav>
+        <span>Kachete</span>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="colum active">
+                <div class="content">
+                    <h1>1</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor 
-                                ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, 
-                                distinctio.
-                            </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
+                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
+                            distinctio.
+                        </p>
                     </div>
+                </div>
+                <div class="bg bg1"></div>
             </div>
-            <div class="bg bg1"></div>
-        </div>
-        <div class="colum">
+            <div class="colum">
                 <div class="content">
                     <h1>2</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor 
-                        ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, 
-                        distinctio.
-                            </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
+                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
+                            distinctio.
+                        </p>
                     </div>
                 </div>
                 <div class="bg bg2"></div>
-        </div>
-        <div class="colum">
+            </div>
+            <div class="colum">
                 <div class="content">
                     <h1>3</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor 
-                        ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, 
-                        distinctio.
-                            </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
+                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
+                            distinctio.
+                        </p>
                     </div>
                 </div>
                 <div class="bg bg3"></div>
-        </div>
-        <div class="colum">
+            </div>
+            <div class="colum">
                 <div class="content">
                     <h1>4</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor 
-                        ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, 
-                        distinctio.
-                            </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
+                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
+                            distinctio.
+                        </p>
                     </div>
                 </div>
                 <div class="bg bg4"></div>
             </div>
-    </div>
+        </div>
+
+    </section>
+    <footer>
+        <span>Coca-Cola</span>
+        <span>Facebook</span> 
+        <span>Microsoft</span> 
+        <span>Tipuana</span> 
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-        $(document).on('mouseover', '.container .colum', function(){
+        $(document).on('mouseover', '.container .colum', function () {
             $(this).addClass('active').siblings().removeClass('active')
         })
     </script>
 </body>
+
 </html>
