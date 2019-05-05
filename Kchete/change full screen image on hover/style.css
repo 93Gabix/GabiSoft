@@ -1,151 +1,256 @@
-body 
-{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-   /* background: #000;*/
-}
-.container
-{
-    width: 100%;
-    height: 34em;                          /* IMORTANTE */
-    overflow: hidden;
-}
-.container .colum
-{
-    width: 25%;
-    height: 100%;
-    float: left;
-    border-right: 2px solid rgba(0,0,0,.5);
-    box-sizing: border-box;
-    z-index: 1;
-}
-.container .colum:last-child
-{
-    border-right: none;
-}
-.container .colum .content
-{
-    position: relative;
-    height: 100%;
-}
-.container .colum .content h1
-{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    background: rgba(0, 0, 0, .1);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: rgba(255, 255, 255, .2);
-    font-size: 15em;
-    border-top: 2px solid rgba(0, 0, 0, .5);
-    border-bottom: 2px solid rgba(0, 0, 0, .5);
-}
-.container .colum .content .box
-{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-    padding: 40px;
-    background: rgba(255, 255, 255, 1);
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-}
-.container .colum.active .content .box
-{
-    opacity: 1;
-}
-.container .colum .content .box h2 
-{
-    margin: 0px;
-    padding: 0px;
-    font-size: 30px;
-    color: #262626;
-}
-.container .colum .content .box p
-{
-    font-size: 18px;
-    color: #262626;
-}
-.container .colum .bg
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-}
-.container .colum.active .bg.bg1
-{
-background: url(BG1.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-transition: 0.5s;
-}
-.container .colum.active .bg.bg2
-{
-background: url(BG2.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-transition: 0.5s;
-}
-.container .colum.active .bg.bg3
-{
-background: url(BG3.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-transition: 0.5s;
-}
-.container .colum.active .bg.bg4
-{
-background: url(BG4.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-transition: 0.5s;
-}
-nav {
-    height: 80px;
-    width: 100%;
-    background-color: #262626;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-nav span {
-    font-size: 2em;
-    text-align: center;
-    color: aliceblue;
-}
-footer {
-    height: 15em;
-    width: 100%;
-    background-color: #262626;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-footer span {
-    font-size: 1.5em;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-}
-body::-webkit-scrollbar {
-    background-color: #262626; 
-    width: 7px;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: #e0d4c0;
-    border-radius: 5px;
-}
+        /* 
+
+Tipografías de GOOGLE:
+font-family: 'Gugi', cursive;
+font-family: 'Montserrat', sans-serif; 
+font-family: 'Great Vibes', cursive;
+
+ Color:
+ #e03171
+*/
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            /* background: #000;*/
+        }
+        
+        .container {
+            width: 100%;
+            height: 34em;
+            /* IMORTANTE */
+            overflow: hidden;
+            /*  box-shadow: 0 -10px 5px #191919FF; */
+            border-top: 50px solid rgba(255, 255, 255, .6);
+        }
+        
+        .container .colum {
+            width: 25%;
+            height: 100%;
+            float: left;
+            border-right: 2px solid rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+            z-index: 1;
+        }
+        
+        .container .colum:last-child {
+            border-right: none;
+        }
+        
+        .container .colum .content {
+            position: relative;
+            height: 100%;
+        }
+        
+        .container .colum .content h1 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            background: rgba(0, 0, 0, .1);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: rgba(255, 255, 255, .2);
+            font-size: 15em;
+            border-top: 2px solid rgba(0, 0, 0, .5);
+            border-bottom: 2px solid rgba(0, 0, 0, .5);
+        }
+        
+        .container .colum .content .box {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            box-sizing: border-box;
+            padding: 40px;
+            background: rgba(255, 255, 255, 1);
+            text-align: center;
+            transition: 0.5s;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .container .colum.active .content .box {
+            opacity: 1;
+        }
+        
+        .container .colum .content .box h2 {
+            margin: 0px;
+            padding: 0px;
+            font-size: 30px;
+            color: #262626;
+        }
+        
+        .container .colum .content .box p {
+            font-size: 18px;
+            color: #262626;
+        }
+        
+        .container .colum .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container .colum.active .bg.bg1 {
+            top: 100vh;
+            background: url(BG1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            transition: 0.5s;
+        }
+        
+        .container .colum.active .bg.bg2 {
+            top: 100vh;
+            background: url(BG2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            transition: 0.5s;
+        }
+        
+        .container .colum.active .bg.bg3 {
+            top: 100vh;
+            background: url(BG3.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            transition: 0.5s;
+        }
+        
+        .container .colum.active .bg.bg4 {
+            top: 100vh;
+            background: url(BG4.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            transition: 0.5s;
+        }
+        /* Header ================================================================================ */
+        
+        header nav {
+            height: 130px;
+            width: 100%;
+            box-shadow: 0 0 15px #191919FF;
+            position: fixed;
+            z-index: 100;
+        }
+        
+        header nav .titulo {
+            font-size: 80px;
+            font-family: 'Gugi', cursive;
+            text-shadow: 5px 5px 5px #191919;
+        }
+        
+        header nav .titulo i {
+            font-size: 50px;
+            font-family: 'Great Vibes', cursive;
+            text-shadow: 5px 5px 5px #191919;
+        }
+        
+        header nav .titulo::first-letter {
+            color: #e03171;
+        }
+        
+        .header div {
+            position: absolute;
+            top: 250px;
+            left: 20px;
+            z-index: 4;
+            background: rgba(10, 10, 10, 0.75);
+            padding: 100px 150px 100px 50px;
+            border-radius: 10px;
+        }
+        
+        .header div p {
+            font-weight: 200;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .header {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1200/1709/Camera-night-glare_1920x1200.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header::after {
+            content: 'Hola';
+            width: 100%;
+            height: 100%;
+            background: #000;
+            position: absolute;
+            opacity: .7;
+            z-index: 2;
+        }
+        /* Contacto ======================================================================================== */
+        
+        .contacto {
+            top: 200vh;
+            width: 100%;
+            height: 1000px;
+            background: #191919;
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .titulo-contacto {
+            font-size: 60px;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        nav {
+            height: 80px;
+            width: 100%;
+            background-color: #262626;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav span {
+            font-size: 2em;
+            text-align: center;
+            color: aliceblue;
+        }
+        
+        footer {
+            height: 15em;
+            width: 100%;
+            background-color: #262626;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0 0 15px rgb(14, 14, 14);
+        }
+        
+        footer span {
+            font-size: 1.5em;
+            text-align: center;
+            color: aliceblue;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body::-webkit-scrollbar {
+            background-color: #262626;
+            width: 7px;
+        }
+        
+        body::-webkit-scrollbar-thumb {
+            background-color: #e0d4c0;
+            border-radius: 5px;
+        }

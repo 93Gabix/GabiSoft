@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hero Section Hover Effects</title>
+    <title>KChete</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <span>Kachete</span>
-    </nav>
+
+    <header class="header" id="cabezera">
+        <nav id="navbar">
+            <span class="titulo">KChete <i class="fotografia">Fotografía</i></span>
+        </nav>
+        <div>
+            <p>Morteros, Córdoba</p>
+            <p>Número de Contacto</p>
+            <p>Redes Sociales</p>
+        </div>
+    </header>
+
     <section>
         <div class="container">
             <div class="colum active">
@@ -20,10 +32,7 @@
                     <h1>1</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
-                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
-                            distinctio.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, distinctio.
                         </p>
                     </div>
                 </div>
@@ -34,10 +43,7 @@
                     <h1>2</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
-                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
-                            distinctio.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, distinctio.
                         </p>
                     </div>
                 </div>
@@ -48,10 +54,7 @@
                     <h1>3</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
-                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
-                            distinctio.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, distinctio.
                         </p>
                     </div>
                 </div>
@@ -62,10 +65,7 @@
                     <h1>4</h1>
                     <div class="box">
                         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, facere.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor
-                            ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis,
-                            distinctio.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum explicabo dolores deleniti aperiam ullam quos? Nobis sint dolor ab odio blanditiis, cupiditate enim tempora voluptate veniam recusandae! Veritatis, distinctio.
                         </p>
                     </div>
                 </div>
@@ -74,18 +74,23 @@
         </div>
 
     </section>
+    <section class="contacto">
+        <h2 class="titulo-contacto">Contacto</h2>
+
+    </section>
     <footer>
         <span>Coca-Cola</span>
-        <span>Facebook</span> 
-        <span>Microsoft</span> 
-        <span>Tipuana</span> 
+        <span>Facebook</span>
+        <span>Microsoft</span>
+        <span>Tipuana</span>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-        $(document).on('mouseover', '.container .colum', function () {
+        $(document).on('mouseover', '.container .colum', function() {
             $(this).addClass('active').siblings().removeClass('active')
         })
     </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
